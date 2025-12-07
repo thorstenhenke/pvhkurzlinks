@@ -3,7 +3,12 @@ name: Build and Deploy to Netlify
 on:
   push:
     branches:
-      - main  
+      - main
+    paths: 
+      - 'body.txt'
+  # Manueller Start
+  workflow_dispatch: 
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
