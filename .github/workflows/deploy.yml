@@ -15,7 +15,6 @@ jobs:
       - name: Build Site
         run: make
 
-      # 3. Den Ordner "weiterleitung" an Netlify senden
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2.0
         with:
