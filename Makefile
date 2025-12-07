@@ -8,6 +8,7 @@ weiterleitung: page.md
 
 page.md: header.md
 	cp -v $< $@
+	./compose.sh
 	# cp -v header.md page.md
 
 clean: 
